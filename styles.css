@@ -1,0 +1,1198 @@
+/* Основные стили для меню */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  letter-spacing: normal;
+  color: #bdbaba;
+  vertical-align: none;
+  text-align: center;
+  line-height: normal;
+  text-transform: none;
+  margin: 0; /* Убираем отступы у body */
+  padding: 0; /* Убираем отступы у body */
+ }
+
+/* Общие стили для меню */
+#main-nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar li {
+  position: relative;
+}
+
+/* Стили для основных ссылок меню */
+#navbar li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: #555;
+}
+
+/* Стили для подменю */
+#navbar ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li:hover ul {
+  display: block;
+  width: 200px;
+}
+
+#navbar ul li {
+  width: 100%;
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar ul li:hover a {
+  background-color: #555;
+}
+
+/* Убираем разделители между пунктами меню */
+#main-nav #navbar li 
+#main-nav #navbar li:last-child {
+  border-right: none;
+}
+
+/* Добавим немного стиля для активного пункта меню */
+#navbar li.active a {
+  background-color: #555;
+}
+
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 650px) {
+  #navbar {
+    flex-direction: column; /* Отображение пунктов меню вертикально на мобильных устройствах */
+    align-items: center; /* Центрируем элементы по горизонтали */}
+
+  #navbar li {
+    position: static; /* Сброс позиции для основных пунктов меню */
+    margin: 0; /* Отступ между пунктами меню */
+    width: 100%; /* Ширина пунктов меню на мобильных устройствах */
+  }
+
+  #navbar ul {
+    position: static; /* Сброс позиции для подменю */
+    display: none; /* Скрытие подменю по умолчанию */
+  }
+
+  #navbar li:hover ul {
+    display: block; /* Отображение подменю при наведении */
+  }
+
+  #navbar ul li {
+    width: 100%; /* Автоматическая ширина элементов подменю */
+  }
+}
+
+
+
+
+
+/* Добавленные стили для блоков текста */
+#text-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.content-box {
+  flex: 1 1 200px;
+  background-color: #f0f0f0; /* Светло-серый цвет фона */
+  border: 1px solid #000000; /* Черный бардюр */
+  border-radius: 10px; /* Закругленные края */
+  padding: 10px;
+  max-width: calc(50% - 40px);
+}
+
+
+
+#main-nav #navbar li {
+  border-right: 1px solid #666;
+}
+
+#main-nav #navbar li:last-child {
+  border-right: none;
+}
+
+#main-nav #navbar li a:hover {
+  background-color: #666;
+}
+/* Стили для основного контента */
+#main-content {
+  display: flex;
+  flex-wrap: wrap; /* Добавляем перенос элементов на новую строку при необходимости */
+  justify-content: center; /* Выравнивание элементов по центру */
+  padding: 20px;
+  text-align: center;
+}
+
+.content-block {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+/* Стили для списка */
+.content-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-block ul li {
+  border: 1px solid #ccc; /* Рамка вокруг элемента списка */
+  border-radius: 5px; /* Закругленные углы рамки */
+  margin-bottom: 10px; /* Отступ между элементами списка */
+  padding: 10px; /* Внутренний отступ вокруг текста */
+}
+
+.content-block ul li p {
+  margin: 0; /* Убираем отступы вокруг абзацев */
+}
+
+/* Добавляем стили для раздела с изображением */
+.content-block {
+  position: relative; /* Устанавливаем позицию как относительную, чтобы можно было использовать абсолютное позиционирование внутри */
+}
+
+
+
+/* Опционально: увеличим отступ между изображением и текстом */
+.content-block p {
+  margin-top: 20px; /* Вы можете изменить значение отступа в соответствии с вашими предпочтениями */
+}
+
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0; /* Убираем внешние отступы */
+  background-color: #333;
+  color: #fff;
+  width: 100%; /* Занимаем всю доступную ширину */
+}
+
+
+.footer-section {
+  flex: 1 1 auto; /* Отменяем жесткую ширину */
+  text-align: center;
+}
+.footer-menu a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет ссылки от родительского элемента */
+}
+.logo-img {
+  width: 100%; /* Сделаем изображение логотипа занимающим всю доступную ширину */
+  max-width: 200px; /* Установим максимальную ширину изображения */
+  height: auto; /* Сохраняем пропорции изображения */
+}
+
+/* Медиа-запрос для установки минимальной ширины для изображения логотипа */
+@media screen and (max-width: 200px) {
+  .logo-img {
+    min-width: 100px; /* Устанавливаем минимальную ширину для изображения */
+  }
+}
+
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #navbar li {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  #navbar li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Размер шрифта в em или rem */
+    transition: font-size 0.3s; /* Плавное изменение размера шрифта */
+  }
+
+  #navbar li:hover a {
+    background-color: #555;
+  }
+}
+
+
+
+/* Стили для основного контента */
+#main-content {
+  display: flex;
+  color: #000000;
+  margin-top: 5px; /* Расстояние между основным контентом и текстовым блоком */
+  text-align: left;
+  padding-left: 30px; /* Отступ слева */
+}
+
+.content-block {
+  flex: 1;
+  padding: 20px;
+}
+
+
+#text-block {
+  display: flex;
+  flex-direction: row; /* Указываем направление горизонтально */
+  justify-content: space-around; /* Выравниваем элементы по горизонтали */
+  align-items: stretch; /* Растягиваем блоки на всю высоту контейнера */
+  flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку */
+}
+
+.content-box {
+  text-align: center; /* Выравниваем текст по центру */
+  padding: 20px; /* Добавляем отступы между блоками */
+  background-color: #f0f0f0; /* Цвет фона блоков */
+  border-radius: 10px; /* Закругляем углы блоков */
+  margin: 10px; /* Добавляем небольшие отступы вокруг блоков */
+  flex-grow: 1; /* Равномерно распределяем свободное пространство между блоками */
+  overflow: hidden; /* Скрываем содержимое, выходящее за рамки блока */
+  transition: transform 0.3s ease; /* Добавляем плавную анимацию для трансформации */
+}
+
+.content-box:hover {
+  transform: scale(1.05); /* Увеличиваем размер контейнера при наведении на него */
+}
+
+.content-box p {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Используем шрифт Arial или его аналоги */
+  color: #333; /* Цвет текста */
+  word-wrap: break-word; /* Переносим длинные слова на новую строку */
+}
+
+.content-box p:nth-child(1) {
+  font-size: 4vw;
+}
+
+.content-box p:nth-child(2) {
+  font-size: 2.5vw;
+}
+
+/* Медиа-запрос для адаптации на мобильных устройствах */
+@media screen and (max-width: 768px) {
+  #text-block {
+    flex-direction: column; /* Переводим блоки в вертикальное расположение */
+    align-items: center; /* Выравниваем блоки по центру по вертикали */
+  }
+}
+
+
+
+
+/* Стили для изображений в блоке контента */
+.content-block img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Ограничиваем высоту изображения до 400px */
+  width: 500px; /* Устанавливаем ширину изображения на 100% */
+  min-width: 200px; /* Минимальная ширина изображения 200px */
+  margin-bottom: 20px; /* Добавляем отступ снизу для изображения */
+  position: relative; /* Устанавливаем позиционирование относительно */
+  z-index: -2; /* Задаем z-index для изображения */
+}
+
+/* Медиа-запрос для адаптации при ширине изображения 200px и менее */
+@media screen and (max-width: 400px) {
+  .content-block {
+    flex-direction: column; /* Переводим блоки в вертикальное расположение */
+    align-items: center; /* Выравниваем блоки по центру */
+  }
+
+}
+
+
+/* Стили для футера */
+footer {
+  width: 100%;
+  background-color: #a3a2a2;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.footer-menu .footer-section {
+  flex: 1; /* Добавляем равномерное распределение пространства */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.footer-menu .footer-section p {
+  margin: 5px 0; /* Добавляем небольшой отступ между пунктами */
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo p {
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid #000000; /* Обводка */
+  padding: 5px; 
+  border-radius: 20px;
+}
+
+.translate-container {
+  width: 80%; /* Уменьшаем ширину контейнера */
+  max-width: 300px; /* Устанавливаем максимальную ширину */
+  margin: 20px auto; /* Выравниваем по центру */
+  padding: 10px; /* Уменьшаем отступы внутри контейнера */
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.translate-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container,
+.output-container {
+  margin-bottom: 20px;
+}
+
+.language-select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.language-select select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.language-select select:focus {
+  border-color: #4f46e5;
+}
+
+.input-output-wrapper {
+  text-align: center; /* Центрируем содержимое по горизонтали */
+  margin: 20px auto; /* Центрируем блок по горизонтали и добавляем отступы сверху и снизу */
+  max-width: 80%; /* Максимальная ширина контейнера */
+}
+
+.input-container,
+.output-container {
+  display: block; /* Делаем контейнеры блочными элементами */
+}
+
+.input-container textarea,
+.output-container textarea {
+  width: 90%; /* Ширина текстового поля равна 100% ширины контейнера */
+  margin: 5px auto; /* Равномерные отступы по вертикали и автоматическое центрирование по горизонтали */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  resize: none;
+  overflow-y: scroll; /* Добавляем вертикальную полосу прокрутки */
+}
+/* Дополнительные стили для мобильной версии */
+@media (max-width: 600px) {
+  .input-output-wrapper {
+    width: 90%; /* Ширина контейнера равна 90% ширины экрана */
+    margin: 10px auto; /* Центрируем блок по горизонтали и добавляем меньшие отступы сверху и снизу */
+    max-width: 600px; /* Устанавливаем максимальную ширину контейнера */
+  }
+
+  .language-select {
+    flex-direction: column; /* Столбцовая ориентация элементов */
+    margin-bottom: 10px; /* Уменьшаем отступы между элементами */
+  }
+
+  .language-select select {
+    width: 100%; /* Ширина селекта равна 100% ширины родительского элемента */
+    margin-bottom: 5px; /* Уменьшаем отступы между селектами */
+  }
+}
+
+#language-test-submenu {
+  display: none; /* По умолчанию выпадающее меню скрыто */
+  position: absolute; /* Позиционируем абсолютно относительно родительского элемента */
+  background-color: #fff; /* Цвет фона выпадающего меню */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Тень для эффекта всплывания */
+}
+
+#language-test:hover #language-test-submenu {
+  display: block; /* При наведении на пункт меню, выпадающее меню становится видимым */
+}
+
+#language-test-submenu li {
+  display: block;
+}
+
+#language-test-submenu a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#language-test-submenu a:hover {
+  background-color: #f0f0f0; /* Цвет фона при наведении на пункт меню */
+}
+
+
+
+/* Стили для таблицы и контейнера */
+.table-container {
+  color: #000000;
+  padding: 10px;
+  width: 80%; /* Ширина контейнера таблицы */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  overflow-x: auto; /* Добавляем горизонтальную прокрутку для узких экранов */
+}
+
+table {
+  width: 100%; /* Ширина таблицы */
+  border-collapse: collapse; /* Слияние границ ячеек */
+}
+
+/* Стили для ячеек таблицы */
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  word-wrap: break-word; /* Перенос текста на новую строку */
+  font-size: 1em; /* Размер текста */
+}
+
+/* Стили для заголовков таблицы */
+th {
+  background-color: #333;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Добавляем анимацию изменения цвета при наведении на строку таблицы */
+tr {
+  transition: background-color 0.3s ease; /* Добавляем плавный переход */
+}
+
+tr:hover {
+  background-color: #ddd; /* Меняем цвет строки при наведении */
+}
+
+
+
+/* Добавляем адаптивность для таблицы */
+@media screen and (max-width: 650px) {
+  table, thead, tbody, th, td, tr { 
+    display: block; /* Превращаем таблицу в блочный элемент */
+    border: 2px solid #ccc; /* Добавляем заметные границы */
+  }
+
+  /* Скрываем заголовки и строки таблицы */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* Стили для ячеек таблицы */
+  td, th { 
+    border: 1px solid #ccc; /* Добавляем внутренние границы */
+    position: relative;
+    padding-left: 50%; /* Добавляем отступ слева */
+  }
+
+  /* Возвращаем отображение текста внутри ячеек */
+  td:before, th:before {
+    position: absolute;
+    left: 6px; /* Устанавливаем отступ слева */
+    content: attr(data-label); /* Отображаем текст из атрибута data-label */
+  }
+}
+
+.lesson-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lesson-content h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.lesson-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.lesson-content h2 {
+  font-size: 22px;
+}
+
+.lesson-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-content li {
+  margin-bottom: 10px;
+}
+
+.lesson-button {
+  display: block;
+  width: 100%;
+  margin: 10px auto; /* Центрируем кнопки по горизонтали */
+  padding: 10px 20px;
+  background-color: #d4d3d3;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 2px solid transparent; /* Добавляем невидимую рамку */
+}
+
+.lesson-button:hover {
+  transform: translateY(-2px) scale(1.1); /* Сдвигаем кнопку вверх на 2px и увеличиваем на 10% при наведении */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Два столбца */
+  grid-template-rows: auto auto; /* Два ряда */
+  gap: 20px; /* Отступы между блоками */
+  margin-bottom: 20px; /* Отступ снизу от контейнера до футера */
+  padding: 20px; /* Отступы по бокам контейнера */
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Рамка для отображения блоков */
+  padding: 20px; /* Отступы внутри блоков */
+  background-color: #f0f0f0; /* Цвет фона блока */
+  border-radius: 10px; /* Закругленные углы для создания обьемности */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для добавления обьемности */
+}
+
+.header-content, .alphabet-section, .greetings-section, .task-section {
+  overflow: auto; /* Если контент в блоке превышает размеры блока, добавляются полосы прокрутки */
+}
+
+.footer-menu {
+  margin-top: 20px; /* Отступ сверху от футера */
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+      padding: 0 20px; /* отступы справа и слева */
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* отступы между блоками */
+  }
+  .grid-item {
+      width: calc(100% - 40px); /* ширина блока с учетом отступов справа и слева */
+      margin-bottom: 20px; /* отступ снизу каждого блока */
+  }
+}
+
+
+/* Делаем текст черного цвета */
+body {
+  color: #000; /* Черный цвет текста */
+}
+
+
+.book-item {
+  width: 100px; /* Уменьшаем ширину книжного элемента */
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px; /* Уменьшаем отступы внутри блока */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Добавляем небольшие отступы между блоками */
+}
+
+.book-item img {
+  max-width: 90%; /* Изображение не будет выходить за пределы родительского элемента */
+  height: auto; /* Сохраняем пропорции изображения */
+  max-height: 100px; /* Уменьшаем максимальную высоту изображения */
+}
+
+.book-item h2 {
+  margin-top: 5px; /* Уменьшаем отступ над заголовком */
+  font-size: 16px; /* Уменьшаем размер шрифта заголовка */
+}
+
+.breadcrumbs {
+  padding: 1em; /* Используем относительную единицу измерения для отступов */
+  background-color: #f0f0f0;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  margin-right: 1em; /* Используем относительную единицу измерения для отступов между ссылками */
+}
+
+.breadcrumbs a:hover {
+  color: #555;
+}
+
+.breadcrumbs a:not(:last-child)::after {
+  content: '>';
+  margin-left: 1em; /* Используем относительную единицу измерения для отступов между символами разделителя */
+  color: #666;
+}
+
+@media screen and (max-width: 600px) {
+  .breadcrumbs {
+      font-size: 14px;
+      padding: 0.5em; /* Уменьшаем отступы для маленьких экранов */
+  }
+
+  .breadcrumbs a {
+      margin-right: 0.5em; /* Уменьшаем отступы между ссылками для маленьких экранов */
+  }
+
+  .breadcrumbs a:not(:last-child)::after {
+      margin-left: 0.5em; /* Уменьшаем отступы между символами разделителя для маленьких экранов */
+  }
+}
+
+
+
+
+
+.language-buttons button {
+  padding: 10px 20px; /* Поля вокруг текста кнопки */
+  margin: 10px; /* Отступ между кнопками */
+  border: 2px solid #ccc; /* Толщина и цвет рамки */
+  border-radius: 10px; /* Закругление углов */
+  background-color: #eee; /* Цвет фона кнопки */
+  color: #333; /* Цвет текста кнопки */
+  font-size: 18px; /* Размер шрифта */
+  cursor: pointer; /* Изменение курсора при наведении */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.language-buttons button:hover {
+  background-color: #ddd; /* Цвет фона при наведении */
+}
+
+.language-selection h2,
+.test-description h3,
+.test-description p,
+.test-description ol,
+.test-description ol li,
+.test-description h4 {
+  color: #000000; /* Цвет текста */
+  text-align: left; /* Выравнивание текста по левой стороне */
+  padding-left: 50px;
+}
+
+.test-description ol {
+  list-style-type: none; /* Убираем нумерацию */
+  padding-left: 10px;
+}
+
+.container {
+  text-align: left; /* Выравнивание текста по левой стороне */
+}
+
+.question {
+  color: #000000; /* Цвет текста */
+  text-align: left; /* Выравнивание текста по левой стороне */
+  padding-left: 50px;
+  list-style-type: none; /* Убираем маркер */
+}
+
+/* Стили для результата теста */
+#result-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+#result-popup h2 {
+  margin-top: 0;
+}
+
+/* Стили для центрирования и адаптивности */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  padding-left: 20px; /* Добавленный отступ слева */
+}
+.question p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question input[type="radio"],
+button[type="submit"] {
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto; /* Центрирование кнопки */
+}
+
+/* Для мобильных устройств */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .question p {
+    font-size: 16px;
+  }
+
+  .question input[type="radio"],
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+
+/* Стили для кнопки "Казахский" */
+.language-buttons a:nth-child(1) button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.language-buttons a:nth-child(1) button:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для кнопки "Русский" */
+.language-buttons a:nth-child(2) button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.language-buttons a:nth-child(2) button:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.2) skewX(20deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для кнопки "Английский" */
+.language-buttons a:nth-child(3) button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.language-buttons a:nth-child(3) button:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.1) skewY(10deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.simple-bar-chart{
+  --line-count: 20; /* Увеличиваем количество линий на фоне */
+  --line-color: currentcolor;
+  --line-opacity: 0.25;
+  --item-gap: 2%;
+  --item-default-color: #060606;
+  
+  height: 15rem; /* Уменьшаем высоту диаграммы */
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--item-gap);
+  align-items: end;
+  padding-inline: var(--item-gap);
+  --padding-block: 1.5rem; /*space for labels*/
+  padding-block: var(--padding-block);
+  position: relative;
+  isolation: isolate;
+}
+
+.simple-bar-chart::after{
+  content: "";
+  position: absolute;
+  inset: var(--padding-block) 0;
+  z-index: -1;
+  --line-width: 1px;
+  --line-spacing: calc(100% / var(--line-count));
+  background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+  box-shadow: 0 var(--line-width) 0 var(--line-color);
+  opacity: var(--line-opacity);
+}
+.simple-bar-chart > .item{
+  opacity: 0.8; /* Добавляем немного прозрачности */
+  height: calc(1% * var(--val));
+  background-color: var(--clr, var(--item-default-color));
+  position: relative;
+  animation: item-height 1s ease forwards
+}
+.simple-bar-chart > .item > * { 
+position: absolute; 
+text-align: center; 
+}
+.simple-bar-chart > .item > .value {
+  position: absolute;
+  text-align: center;
+  visibility: hidden; /* изначально скрываем проценты */
+}
+
+@keyframes item-height { from { height: 0 } }
+
+.simple-bar-chart > .item > * { position: absolute; text-align: center }
+.simple-bar-chart > .item > .label { inset: 100% 0 auto 0 }
+.simple-bar-chart > .item > .value { inset: auto 0 100% 0 }
+/* Добавляем стили для мобильных устройств */
+@media (max-width: 768px) {
+  .simple-bar-chart > .item > .label {
+    writing-mode: vertical-lr; /* Вертикальное направление текста */
+    transform: rotate(180deg); /* Поворачиваем текст на 180 градусов */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+    text-align: center; /* Выравниваем текст по центру */
+    margin: 0 auto; /* Выравниваем по центру */
+  }
+  .footer-menu {
+    margin-top: 9rem; /* Устанавливаем больший отступ сверху */
+  }
+  .simple-bar-chart > .item > .value {
+    display: none; /* Скрываем проценты */
+  }
+}
+
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
+  gap: 20px; /* Отступы между книгами */
+}
+
+.book-item {
+  flex: 1 0 calc(25% - 20px); /* Распределяем пространство между элементами, вычитая отступы */
+  border: 1px solid #616161; /* Рамка вокруг каждой книги */
+  padding: 10px; /* Внутренние отступы */
+  text-align: center; /* Выравнивание содержимого по центру */
+  color: black; /* Цвет текста */
+}
+
+.book-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-item h2 {
+  margin-top: 0;
+}
+
+
+.media-item {
+  margin-bottom: 10px; /* Уменьшаем отступ между каждым блоком медиа-элементов */
+}
+
+.media-content {
+  background-color: #f9f9f9;
+  padding: 5px; /* Уменьшаем внутренний отступ */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px; /* Уменьшаем отступ между каждым медиа-элементом внутри блока */
+}
+
+.media-content img {
+  max-width: 85%; /* Изображение не будет выходить за пределы родительского элемента */
+  height: auto; /* Сохраняем пропорции изображения */
+}
+
+.media-item h3 {
+    margin: 10px 0 5px; /* Отступы сверху и снизу, но без отступа снизу */
+    font-family: "Times New Roman", Times, serif; /* Шрифт */
+    color: black; /* Черный цвет текста */
+    font-size: 18px; /* Размер шрифта */
+}
+
+
+.media-content p {
+  margin-top: 3px; /* Устанавливаем небольшой отступ над текстом */
+  font-size: 14px; /* Уменьшаем размер шрифта */
+  color: black; /* Черный цвет текста */
+  font-family: "Times New Roman", Times, serif; /* Выбираем шрифт */
+}
+  .video-content,
+  .audio-content {
+    display: flex;
+    flex-direction: row; /* Располагаем элементы по горизонтали */
+    justify-content: space-around; /* Равномерно распределяем элементы по горизонтали */
+    margin: 20px 0; /* Добавляем отступ сверху и снизу */
+  }
+  
+  .video-content .media-content,
+  .audio-content .media-content {
+    margin: 0 10px; /* Добавляем отступ между элементами */
+  }
+/* Медиа-запрос для мобильной версии */
+@media only screen and (max-width: 768px) {
+  .video-content,
+  .audio-content {
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+    justify-content: space-between; /* Распределяем элементы равномерно по горизонтали */
+  }
+  
+  .video-content .media-content,
+  .audio-content .media-content {
+    margin: 10px; /* Уменьшаем отступ между элементами */
+    width: calc(50% - 20px); /* Устанавливаем ширину элементов в 50% с учетом отступов */
+    box-sizing: border-box; /* Учитываем padding и border в расчете ширины элемента */
+  }
+}
+
+/* Медиа-запрос для мобильной версии */
+@media only screen and (max-width: 600px) {
+  .video-content .media-content,
+  .audio-content .media-content {
+    margin: 10px; /* Уменьшаем отступ между элементами */
+    width: calc(100% - 20px); /* Устанавливаем ширину элементов в 100% с учетом отступов */
+    box-sizing: border-box; /* Учитываем padding и border в расчете ширины элемента */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+  }
+}
+
+
+
+  
+  .task-section {
+    text-align: center; /* Центрируем текст по горизонтали */
+  }
+  
+  .task-content {
+    color: black; /* Черный цвет текста */
+    margin: 0 auto; /* Центрируем контент по горизонтали */
+    max-width: 600px; /* Максимальная ширина контента */
+  }
+  
+  .task-content button {
+    display: block; /* Располагаем кнопки одну под другой */
+    width: 100%; /* Занимаем всю доступную ширину контейнера */
+    margin: 10px auto; /* Отступы между кнопками и центрирование */
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    background-color: #c2c2c2; /* Цвет фона кнопок */
+    color: rgb(0, 0, 0); /* Цвет текста кнопок */
+    border: 1; 
+    border-radius: 5px; /* Скругляем углы кнопок */
+    cursor: pointer; /* Устанавливаем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+  }
+  
+  .task-content button:hover {
+    background-color: #d7d7d7; /* Изменяем цвет фона при наведении */
+  }
+  
+  
+
+
+
+  .login-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #c4c1c177;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-form button[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #3a71d8;
+  }
+  
+  .login-form a {
+    color: #000000; /* черный цвет текста */
+    text-decoration: none; /* убираем подчеркивание */
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline; /* добавляем подчеркивание при наведении */
+  }
+  
+.registration-form {
+  max-width: 400px; /* Максимальная ширина формы */
+  margin: 0 auto; /* Центрирование формы по горизонтали */
+  padding: 20px; /* Внутренний отступ */
+  background-color: #f9f9f9; /* Цвет фона формы */
+  border-radius: 5px; /* Закругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.registration-form h2 {
+  margin-bottom: 20px; /* Отступ снизу заголовка */
+  text-align: center; /* Выравнивание текста по центру */
+  color: #000000; /* черный цвет текста */
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+  width: 90%; /* Ширина полей ввода */
+  padding-right: 50px; /* Добавлен отступ справа */
+  padding: 10px; /* Внутренний отступ */
+  margin-bottom: 15px; /* Отступ снизу */
+  border: 1px solid #ccc; /* Граница */
+  border-radius: 3px; /* Закругленные углы */
+}
+
+.registration-form button[type="submit"] {
+  width: 90%; /* Ширина кнопки */
+  padding: 10px; /* Внутренний отступ */
+  background-color: #007bff; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border: none; /* Убираем границу */
+  border-radius: 3px; /* Закругленные углы */
+  cursor: pointer; /* Курсор при наведении */
+  transition: background-color 0.3s; /* Плавное изменение цвета фона */
+}
+
+.registration-form button[type="submit"]:hover {
+  background-color: #0056b3; /* Изменение цвета фона кнопки при наведении */
+}
+
+
