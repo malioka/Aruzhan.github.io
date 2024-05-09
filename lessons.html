@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Уроки</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Подключаем общие стили -->
+  <link rel="stylesheet" href="styles.css?v=1">
+  <!-- Подключаем начальные стили -->
+  <link id="theme-style" rel="stylesheet" href="theme.css">
+  <script src="languageSelector.js" defer></script>
 </head>
 <body>
   <nav id="main-nav">
     <ul id="navbar">
       <li id="logotip">
-        <img src="img\index\Soile.png" alt="Фото" style="width: 100px;">
+        <img id="img\index\Soile.webp" alt="Фото" style="width: 100px;">
       </li>
       <li id="home"><a href="index.html" style="text-decoration:none;">Главная</a></li>
       <li id="dictionary"><a href="dictionary.html" style="text-decoration:none;">Словарь</a></li>
@@ -30,119 +34,83 @@
         </ul>
       </li>
       <li id="login">
-        <a href="login/login.html">Вход</a>
-        <ul id="login-submenu">
-          <li><a href="login/registration.html">Регистрация</a></li>
-          <li><a href="login/error.html">Ошибка</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="lesson-content">
-    <h1>Добро пожаловать на страницу Уроки!</h1>
-    <p id="language-selection-text">Выберите язык, который вы хотите изучать:</p>
-    <div class="language-selection">
-      <button id="kazakh" class="language-button">Казахский</button>
-      <button id="russian" class="language-button">Русский</button>
-      <button id="english" class="language-button">Английский</button>
+        <a href="#" onclick="openLoginModal()">Вход</a>
+    </li>  
+  </ul>
+</nav>
+<!-- Входное модальное окно -->
+<div id="login-modal" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="login-form">
+        <h2>Войти</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Имя пользователя" required><br>
+            <input type="password" name="password" placeholder="Пароль" required><br>
+            <button type="submit">Войти</button>
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+        </form>
+        <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
     </div>
-    <div id="lessons-container" style="display: none;">
-      <div id="kazakh-lessons" style="display: none;">
-        <h2>Уроки по казахскому языку</h2>
-        <a href="lessons/kazakh_lesson1.html" style="text-decoration: none;"><button class="lesson-button" style="background-color: #aaf0d1;">Урок 1: Основы казахского языка</button> </a>
-        <a href="lessons/kazakh_lesson2.html" style="text-decoration: none;"><button class="lesson-button"style="background-color: #aaf0d1;">Урок 2: Грамматика казахского языка</button></a>
-        <a href="lessons/kazakh_lesson3.html" style="text-decoration: none;"><button class="lesson-button">Урок 3: Разговорная практика</button></a>
-        <a href="lessons/kazakh_lesson4.html" style="text-decoration: none;"><button class="lesson-button">Урок 4: Чтение и аудирование</button></a>
-        <a href="lessons/kazakh_lesson5.html" style="text-decoration: none;"><button class="lesson-button">Урок 5: Письмо и грамматика</button></a>
-        <a href="lessons/kazakh_lesson6.html" style="text-decoration: none;"><button class="lesson-button">Урок 6: Лексика и фразы</button></a>
-        <a href="lessons/kazakh_lesson7.html" style="text-decoration: none;"><button class="lesson-button">Урок 7: Устная речь и диалоги</button></a>
-      </div>    
-      <div id="russian-lessons" style="display: none;">
-        <h2>Уроки по русскому языку</h2>
-        <a href="lessons/russian_lesson1.html" style="text-decoration: none;"><button class="lesson-button"style="background-color: #aaf0d1;">Урок 1: Алфавит и произношение</button></a>
-        <a href="lessons/russian_lesson2.html" style="text-decoration: none;"><button class="lesson-button"style="background-color: #aaf0d1;">Урок 2: Грамматика русского языка</button></a>
-        <a href="lessons/russian_lesson3.html" style="text-decoration: none;"><button class="lesson-button">Урок 3: Чтение и письмо</button></a>
-        <a href="lessons/russian_lesson4.html" style="text-decoration: none;"><button class="lesson-button">Урок 4: Лексика и разговорные темы</button></a>
-        <a href="lessons/russian_lesson5.html" style="text-decoration: none;"><button class="lesson-button">Урок 5: Письмо и аудирование</button></a>
-        <a href="lessons/russian_lesson6.html" style="text-decoration: none;"><button class="lesson-button">Урок 6: Устная речь и фразы</button></a>
-        <a href="lessons/russian_lesson7.html" style="text-decoration: none;"><button class="lesson-button">Урок 7: Грамматика и чтение</button></a>
-      </div>
-      
-      <div id="english-lessons" style="display: none;">
-        <h2>Уроки по английскому языку</h2>
-        <a href="lessons/english_lesson1.html" style="text-decoration: none;"><button class="lesson-button"style="background-color: #aaf0d1;">Урок 1: Английский для начинающих</button></a>
-        <a href="lessons/english_lesson2.html" style="text-decoration: none;"><button class="lesson-button"style="background-color: #aaf0d1;">Урок 2: Грамматика и чтение</button></a>
-        <a href="lessons/english_lesson3.html" style="text-decoration: none;"><button class="lesson-button">Урок 3: Разговорная практика</button></a>
-        <a href="lessons/english_lesson4.html" style="text-decoration: none;"><button class="lesson-button">Урок 4: Лексика и аудирование</button></a>
-        <a href="lessons/english_lesson5.html" style="text-decoration: none;"><button class="lesson-button">Урок 5: Говорение и письмо</button></a>
-        <a href="lessons/english_lesson6.html" style="text-decoration: none;"><button class="lesson-button">Урок 6: Фразы и устная речь</button></a>
-        <a href="lessons/english_lesson7.html" style="text-decoration: none;"><button class="lesson-button">Урок 7: Чтение и грамматика</button></a>
-      </div>
-  </div> 
-  </div> 
-   <!-- Добавим некоторый контент, чтобы футер спустился -->
-   <div id="additional-content" style="height: 294px; "></div>
+</div>
+</div>
 
+<!-- Форма регистрации (пока скрыта) -->
+<div id="registration-form" class="modal" style="display:none;">
+<div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="registration.php" method="post">
+            <input type="text" name="username" placeholder="Имя пользователя" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Пароль" required><br>
+            <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+            <button type="submit">Зарегистрироваться</button>
+            <span class="close" onclick="closeRegistrationModal()">&times;</span>
+
+        </form>
+    </div>
+</div>
+</div>
+  <!-- Блок с выбором языка -->
+  <div class="language-selection">
+    <h2>Выберите изучаемый язык</h2>
+    <button onclick="changeLanguage('english')">Английский</button>
+    <button onclick="changeLanguage('kazakh')">Казахский</button>
+    <button onclick="changeLanguage('russian')">Русский</button>
+  </div>
+  
+  <!-- Контейнер для блоков с меню и контентом уроков -->
+  <div class="lessons-container">
+    <!-- Блок с меню уроков -->
+    <div class="lessons-menu">
+      <!-- Ваше меню раздела уроков здесь -->
+      <ul id="lessons-menu">
+        <!-- Содержимое меню уроков будет здесь -->
+      </ul>
+    </div>
+    <!-- Блок с контентом уроков -->
+    <div class="lessons-content" id="lessons-content">
+      <!-- Содержимое уроков будет здесь -->
+    </div>
+  </div>
   <footer class="footer-menu">
     <div class="footer-section">
-      <p>О проекте</p>
+      <p><a href="project.html">О проекте</a></p>
       <p><a href="Inform.html">О нас</a></p>
-      <p>Контакты</p>
+      <p><a href="login/error.html">Обратная связь</a></p>
     </div>
     <div class="footer-section logo">
-      <img src="img\index\Soile.png" alt="Фото" class="logo-img">
+      <img src="img\index\Soile.webp" alt="Фото" class="logo-img">
     </div>
     <div class="footer-section">
       <p>Другие сайты</p>
-      <p>Сайт1</p>
-      <p>Сайт2</p>
+      <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+      <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
     </div>
   </footer>
 
-  <script>
-    // Получаем кнопки выбора языка
-    const languageButtons = document.querySelectorAll('.language-button');
   
-    // Получаем дополнительный контент
-    const additionalContent = document.getElementById('additional-content');
-  
-    // Добавляем обработчик события для каждой кнопки
-    languageButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        // Скрываем дополнительный контент
-        additionalContent.style.display = 'none';
-      });
-    });
-  
-    // Получаем контейнер для уроков
-    const lessonsContainer = document.getElementById('lessons-container');
-  
-    // Добавляем обработчик события для каждой кнопки выбора языка
-    languageButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        // Скрываем все кнопки выбора языка
-        languageButtons.forEach(btn => {
-          btn.style.display = 'none';
-        });
-  
-        // Определяем выбранный язык
-        const selectedLanguage = this.id;
-  
-        // Показываем контейнер с уроками по выбранному языку
-        lessonsContainer.style.display = 'block';
-  
-        // Определяем контейнер с уроками для выбранного языка
-        const selectedLessonsContainer = document.getElementById(`${selectedLanguage}-lessons`);
-  
-        // Показываем контейнер с уроками для выбранного языка
-        selectedLessonsContainer.style.display = 'block';
-        // Скрыть текст выбора языка после выбора языка
-const languageSelectionText = document.getElementById('language-selection-text');
-languageSelectionText.style.display = 'none';
-      });
-    });
-  </script>
-
 </body>
 </html>
