@@ -125,19 +125,19 @@ function changeLanguage(language) {
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='lessons/english_lesson1.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 1'>
+              <img src='img\lessons\pp.webp' alt='Lesson 1'>
               <p>Lesson 1 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='lessons/english_lesson2.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 2'>
+              <img src='img\lessons\pp.webp' alt='Lesson 2'>
               <p>Lesson 2 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 3'>
+              <img src='img\lessons\pp.webp' alt='Lesson 3'>
               <p>Lesson 3 Description</p>
             </a>
           </div>
@@ -147,19 +147,19 @@ function changeLanguage(language) {
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 4'>
+              <img src='img\lessons\pp.webp' alt='Lesson 4'>
               <p>Lesson 4 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 5'>
+              <img src='img\lessons\pp.webp' alt='Lesson 5'>
               <p>Lesson 5 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 6'>
+              <img src='img\lessons\pp.webp' alt='Lesson 6'>
               <p>Lesson 6 Description</p>
             </a>
           </div>
@@ -169,19 +169,19 @@ function changeLanguage(language) {
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 7'>
+              <img src='img\lessons\pp.webp' alt='Lesson 7'>
               <p>Lesson 7 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 8'>
+              <img src='img\lessons\pp.webp' alt='Lesson 8'>
               <p>Lesson 8 Description</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 9'>
+              <img src='img\lessons\pp.webp' alt='Lesson 9'>
               <p>Lesson 9 Description</p>
             </a>
           </div>
@@ -191,19 +191,19 @@ function changeLanguage(language) {
           lessonsContent.innerHTML = `
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 1'>
+                <img src='img\lessons\pp.webp' alt='Lesson 1'>
                 <p>Lesson 10 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 2'>
+                <img src='img\lessons\pp.webp' alt='Lesson 2'>
                 <p>Lesson 11 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 3'>
+                <img src='img\lessons\pp.webp' alt='Lesson 3'>
                 <p>Lesson 12 Description</p>
               </a>
             </div>
@@ -213,19 +213,19 @@ function changeLanguage(language) {
           lessonsContent.innerHTML = `
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 4'>
+                <img src='img\lessons\pp.webp' alt='Lesson 4'>
                 <p>Lesson 13 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 5'>
+                <img src='img\lessons\pp.webp' alt='Lesson 5'>
                 <p>Lesson 14 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 6'>
+                <img src='img\lessons\pp.webp' alt='Lesson 6'>
                 <p>Lesson 15 Description</p>
               </a>
             </div>
@@ -235,19 +235,19 @@ function changeLanguage(language) {
           lessonsContent.innerHTML = `
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 7'>
+                <img src='img\lessons\pp.webp' alt='Lesson 7'>
                 <p>Lesson 16 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 8'>
+                <img src='img\lessons\pp.webp' alt='Lesson 8'>
                 <p>Lesson 17 Description</p>
               </a>
             </div>
             <div class='lesson-block'>
               <a href='#'>
-                <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Lesson 9'>
+                <img src='img\lessons\pp.webp' alt='Lesson 9'>
                 <p>Lesson 18 Description</p>
               </a>
             </div>
@@ -258,19 +258,19 @@ function changeLanguage(language) {
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='lessons/kazakh_lesson1.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='1 сабақ'>
+              <img src='img\lessons\pp.webp' alt='1 сабақ'>
               <p>1 сабақ сипаттамасы</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='lessons/kazakh_lesson2.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='2 сабақ'>
+              <img src='img\lessons\pp.webp' alt='2 сабақ'>
               <p>2 сабақ сипаттамасы</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='3 сабақ'>
+              <img src='img\lessons\pp.webp' alt='3 сабақ'>
               <p>3 сабақ сипаттамасы</p>
             </a>
           </div>
@@ -280,19 +280,19 @@ function changeLanguage(language) {
   lessonsContent.innerHTML = `
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='4 сабақ'>
+        <img src='img\lessons\pp.webp' alt='4 сабақ'>
         <p>4 сабақ сипаттамасы</p>
       </a>
     </div>
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='5 сабақ'>
+        <img src='img\lessons\pp.webp' alt='5 сабақ'>
         <p>5 сабақ сипаттамасы</p>
       </a>
     </div>
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='6 сабақ'>
+        <img src='img\lessons\pp.webp' alt='6 сабақ'>
         <p>6 сабақ сипаттамасы</p>
       </a>
     </div>
@@ -302,19 +302,19 @@ function changeLanguage(language) {
     lessonsContent.innerHTML = `
       <div class='lesson-block'>
         <a href='#'>
-          <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='7 сабақ'>
+          <img src='img\lessons\pp.webp' alt='7 сабақ'>
           <p>7 сабақ сипаттамасы</p>
         </a>
       </div>
       <div class='lesson-block'>
         <a href='#'>
-          <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='8 сабақ'>
+          <img src='img\lessons\pp.webp' alt='8 сабақ'>
           <p>8 сабақ сипаттамасы</p>
         </a>
       </div>
       <div class='lesson-block'>
         <a href='#'>
-          <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='9 сабақ'>
+          <img src='img\lessons\pp.webp' alt='9 сабақ'>
           <p>9 сабақ сипаттамасы</p>
         </a>
       </div>
@@ -324,19 +324,19 @@ function changeLanguage(language) {
       lessonsContent.innerHTML = `
         <div class='lesson-block'>
           <a href='#'>
-            <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='1 сабақ'>
+            <img src='img\lessons\pp.webp' alt='1 сабақ'>
             <p>10 сабақ сипаттамасы</p>
           </a>
         </div>
         <div class='lesson-block'>
           <a href='#'>
-            <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='2 сабақ'>
+            <img src='img\lessons\pp.webp' alt='2 сабақ'>
             <p>11 сабақ сипаттамасы</p>
           </a>
         </div>
         <div class='lesson-block'>
           <a href='#'>
-            <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='3 сабақ'>
+            <img src='img\lessons\pp.webp' alt='3 сабақ'>
             <p>12 сабақ сипаттамасы</p>
           </a>
         </div>
@@ -346,19 +346,19 @@ function changeLanguage(language) {
 lessonsContent.innerHTML = `
   <div class='lesson-block'>
     <a href='#'>
-      <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='4 сабақ'>
+      <img src='img\lessons\pp.webp' alt='4 сабақ'>
       <p>13 сабақ сипаттамасы</p>
     </a>
   </div>
   <div class='lesson-block'>
     <a href='#'>
-      <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='5 сабақ'>
+      <img src='img\lessons\pp.webp' alt='5 сабақ'>
       <p>14 сабақ сипаттамасы</p>
     </a>
   </div>
   <div class='lesson-block'>
     <a href='#'>
-      <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='6 сабақ'>
+      <img src='img\lessons\pp.webp' alt='6 сабақ'>
       <p>15 сабақ сипаттамасы</p>
     </a>
   </div>
@@ -368,19 +368,19 @@ case "Түр 6":
   lessonsContent.innerHTML = `
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='7 сабақ'>
+        <img src='img\lessons\pp.webp' alt='7 сабақ'>
         <p>16 сабақ сипаттамасы</p>
       </a>
     </div>
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='8 сабақ'>
+        <img src='img\lessons\pp.webp' alt='8 сабақ'>
         <p>17 сабақ сипаттамасы</p>
       </a>
     </div>
     <div class='lesson-block'>
       <a href='#'>
-        <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='9 сабақ'>
+        <img src='img\lessons\pp.webp' alt='9 сабақ'>
         <p>18 сабақ сипаттамасы</p>
       </a>
     </div>
@@ -391,19 +391,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='lessons/russian_lesson1.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 1'>
+              <img src='img\lessons\pp.webp' alt='Урок 1'>
               <p>Описание урока 1</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='lessons/russian_lesson2.html'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 2'>
+              <img src='img\lessons\pp.webp' alt='Урок 2'>
               <p>Описание урока 2</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 3'>
+              <img src='img\lessons\pp.webp' alt='Урок 3'>
               <p>Описание урока 3</p>
             </a>
           </div>
@@ -414,19 +414,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 4'>
+              <img src='img\lessons\pp.webp' alt='Урок 4'>
               <p>Описание урока 4</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 5'>
+              <img src='img\lessons\pp.webp' alt='Урок 5'>
               <p>Описание урока 5</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 6'>
+              <img src='img\lessons\pp.webp' alt='Урок 6'>
               <p>Описание урока 6</p>
             </a>
           </div>
@@ -437,19 +437,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 7'>
+              <img src='img\lessons\pp.webp' alt='Урок 7'>
               <p>Описание урока 7</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 8'>
+              <img src='img\lessons\pp.webp' alt='Урок 8'>
               <p>Описание урока 8</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 9'>
+              <img src='img\lessons\pp.webp' alt='Урок 9'>
               <p>Описание урока 9</p>
             </a>
           </div>
@@ -459,19 +459,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 1'>
+              <img src='img\lessons\pp.webp' alt='Урок 1'>
               <p>Описание урока 10</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 2'>
+              <img src='img\lessons\pp.webp' alt='Урок 2'>
               <p>Описание урока 11</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 3'>
+              <img src='img\lessons\pp.webp' alt='Урок 3'>
               <p>Описание урока 12</p>
             </a>
           </div>
@@ -482,19 +482,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 4'>
+              <img src='img\lessons\pp.webp' alt='Урок 4'>
               <p>Описание урока 13</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 5'>
+              <img src='img\lessons\pp.webp' alt='Урок 5'>
               <p>Описание урока 14</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 6'>
+              <img src='img\lessons\pp.webp' alt='Урок 6'>
               <p>Описание урока 15</p>
             </a>
           </div>
@@ -505,19 +505,19 @@ case "Түр 6":
         lessonsContent.innerHTML = `
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 7'>
+              <img src='img\lessons\pp.webp' alt='Урок 7'>
               <p>Описание урока 16</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 8'>
+              <img src='img\lessons\pp.webp' alt='Урок 8'>
               <p>Описание урока 17</p>
             </a>
           </div>
           <div class='lesson-block'>
             <a href='#'>
-              <img src='C:\\Users\\Mechta2023\\Desktop\\4 семестр\\протоколы и интерфейсы компьютерных систем\\3modul\\img\\book-list\\pp.png' alt='Урок 9'>
+              <img src='img\lessons\pp.webp' alt='Урок 9'>
               <p>Описание урока 18</p>
             </a>
           </div>
