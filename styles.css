@@ -263,7 +263,7 @@ body {
 }
 
 .list-item::before {
-  content: url("C:\\Users\\Mechta2023\\Downloads\\icons8-обучение.gif"); /* Указываем путь к изображению маркера */
+  content: url("img\index\icons1.webp"); /* Указываем путь к изображению маркера */
   margin-right: 10px; /* Отступ между маркером и текстом */
   height: 14px; /* Задаем высоту изображения маркера */
 }
@@ -275,7 +275,7 @@ body {
 }
 
 .list::before {
-  content: url("C:\\Users\\Mechta2023\\Downloads\\icons8-чат-на-компьютере.gif"); /* Указываем путь к изображению маркера */
+  content: url("img\index\icons2.webp"); /* Указываем путь к изображению маркера */
   margin-right: 10px; /* Отступ между маркером и текстом */
   height: 14px; /* Задаем высоту изображения маркера */
 }
@@ -286,7 +286,7 @@ body {
 }
 
 .iteem::before {
-  content: url("C:\\Users\\Mechta2023\\Downloads\\icons8-заметка.gif"); /* Указываем путь к изображению маркера */
+  content: url("img\index\icons3.webp"); /* Указываем путь к изображению маркера */
   margin-right: 10px; /* Отступ между маркером и текстом */
   height: 14px; /* Задаем высоту изображения маркера */
 }
