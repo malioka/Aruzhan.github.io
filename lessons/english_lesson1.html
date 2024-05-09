@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 1: Английский для начинающих</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+    <script src="book.js"></script>
+</head>
+<body>
+    <nav id="main-nav">
+        <ul id="navbar">
+          <li id="logotip">
+            <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+        </li>
+            <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+            <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+              <li id="lessons">
+                <a href="../lessons.html">Уроки</a>
+                <ul id="lessons-submenu">
+                  <li><a href="book-list.html">Книги</a></li>
+                  <li><a href="media-list.html">Медия</a></li>
+                </ul>
+              </li>
+              <li id="language-test">
+                <a href="../language-test.html">Языковой тест</a>
+                <ul id="language-test-submenu">
+                  <li><a href="../language-test/russian_test.html">Русский</a></li>
+                  <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+                  <li><a href="../language-test/english_test.html">Английский</a></li>
+                </ul>
+              </li>    
+              <li id="login">
+                <a href="#" onclick="openLoginModal()">Вход</a>
+            </li>  
+          </ul>
+        </nav>
+        <!-- Входное модальное окно -->
+        <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="login-form">
+                <h2>Войти</h2>
+                <form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <button type="submit">Войти</button>
+                    <span class="close" onclick="closeLoginModal()">&times;</span>
+                </form>
+                <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Форма регистрации (пока скрыта) -->
+        <div id="registration-form" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="registration-form">
+                <h2>Регистрация</h2>
+                <form action="registration.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                    <button type="submit">Зарегистрироваться</button>
+                    <span class="close" onclick="closeRegistrationModal()">&times;</span>
+        
+                </form>
+            </div>
+        </div>
+        </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="../index.html">Главная</a> &gt; <a href="../lessons.html">Уроки</a> &gt; Урок 1: Английский для начинающих
+    </div>
+
+    <div class="grid-container">
+        <!-- First block -->
+        <div class="grid-item header-content" style="text-align: left;">
+            <h1>Введение в английский для начинающих</h1>
+            <p>Добро пожаловать на первый урок по изучению английского языка для начинающих! В этом уроке мы рассмотрим английский алфавит, основные согласные и задание на вставку букв.</p>
+            <h2>Английский алфавит</h2>
+            <p>Английский алфавит состоит из 26 букв, включая заглавные (прописные) и строчные буквы.</p>
+        </div>
+
+        <!-- Second block -->
+        <div class="grid-item grammar-basics-section" style="text-align: left;">
+        <h2>Основные согласные</h2>
+        <p>Согласные - это звуки в английском языке, которые не являются гласными. Вот некоторые из основных согласных:</p>
+        <ul>
+            <li>Буква <strong><input type="text" placeholder="A"></strong> обозначает слово Apple (яблоко).</li>
+            <li>Буква <strong><input type="text" placeholder="B"></strong> обозначает слово Ball (мяч).</li>
+            <li>Буква <strong><input type="text" placeholder="C"></strong> обозначает слово Cat (кот).</li>
+            <li>Буква <strong><input type="text" placeholder="D"></strong> обозначает слово Dog (собака).</li>
+            <li>Буква <strong><input type="text" placeholder="F"></strong> обозначает слово Fish (рыба).</li>
+        </ul>
+    </div>
+        
+        <!-- Third block -->
+        <div class="grid-item vowels-section" style="text-align: left;">
+            <h2>Vowels</h2>
+            <p>Vowels are sounds in English that are not consonants. Here are some of the main vowels:</p>
+            <ul>
+                <li>The letter <strong><input type="text" placeholder="A"></strong> is a vowel.</li>
+                <li>The letter <strong><input type="text" placeholder="E"></strong> is a vowel.</li>
+                <li>The letter <strong><input type="text" placeholder="I"></strong> is a vowel.</li>
+                <li>The letter <strong><input type="text" placeholder="O"></strong> is a vowel.</li>
+                <li>The letter <strong><input type="text" placeholder="U"></strong> is a vowel.</li>
+            </ul>
+        </div>
+
+        <!-- Fourth block -->
+        <div class="grid-item task-section" style="text-align: left;">
+            <h2>Task: English Grammar</h2>
+            <ol>
+                <li>Place the correct letter in the blank:</li>
+                <li>I have an <input type="text" placeholder="A">pple.</li>
+                <li>My favorite color is <input type="text" placeholder="B">lue.</li>
+                <li>He likes to play <input type="text" placeholder="F">ootball.</li>
+                <li>She has a <input type="text" placeholder="C">at.</li>
+                <li>The sun is <input type="text" placeholder="S">hining.</li>
+                <li>We go to school on <input type="text" placeholder="M">onday.</li>
+                <li>My sister's name is <input type="text" placeholder="S">arah.</li>
+                <li>I want to buy a new <input type="text" placeholder="B">ook.</li>
+                <li>They live in <input type="text" placeholder="C">anada.</li>
+                <li>We like to eat <input type="text" placeholder="P">izza.</li>
+                <li>This is my <input type="text" placeholder="H">ouse.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer class="footer-menu">
+        <div class="footer-section">
+            <p><a href="../project.html">О проекте</a></p>
+            <p><a href="../Inform.html">О нас</a></p>
+            <p><a href="../login/error.html">Обратная связь</a></p>
+        </div>
+        <div class="footer-section logo">
+            <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+        </div>
+        <div class="footer-section">
+            <p>Другие сайты</p>
+            <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+            <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+          </div>
+    </footer>
+</body>
+</html>

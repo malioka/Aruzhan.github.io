@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медиафайлы</title>
+     <!-- Подключаем общие стили -->
+     <link rel="stylesheet" href="../styles.css?v=1">
+     <!-- Подключаем начальные стили -->
+     <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="videotube.min.css">
+  <script src="videotube.min.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+    </li>
+        <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+        <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+          <li id="lessons">
+            <a href="../lessons.html">Уроки</a>
+            <ul id="lessons-submenu">
+              <li><a href="book-list.html">Книги</a></li>
+              <li><a href="media-list.html">Медия</a></li>
+            </ul>
+          </li>
+          <li id="language-test">
+            <a href="../language-test.html">Языковой тест</a>
+            <ul id="language-test-submenu">
+              <li><a href="../language-test/russian_test.html">Русский</a></li>
+              <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+              <li><a href="../language-test/english_test.html">Английский</a></li>
+            </ul>
+          </li>    
+          <li id="login">
+            <a href="#" onclick="openLoginModal()">Вход</a>
+        </li>  
+      </ul>
+    </nav>
+    <!-- Входное модальное окно -->
+    <div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="login-form">
+            <h2>Войти</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <button type="submit">Войти</button>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </form>
+            <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Форма регистрации (пока скрыта) -->
+    <div id="registration-form" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="registration-form">
+            <h2>Регистрация</h2>
+            <form action="registration.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                <button type="submit">Зарегистрироваться</button>
+                <span class="close" onclick="closeRegistrationModal()">&times;</span>
+    
+            </form>
+        </div>
+    </div>
+    </div>
+  <div class="media-list">
+    <div class="media-item">
+        <h3>Видео</h3>
+        <div class="video-content">
+            <a href="https://youtu.be/P0enXHMINTk?feature=shared" class="card__link tube" style="color: black; text-decoration: none;">
+              <div class="media-content">
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png" alt="Video Thumbnail">
+            <p>Алфавит для малышей</p></div>
+          </a>
+          
+    
+            <a href="https://youtu.be/kDdg2M1_EuE?feature=shared" class="card__link tube" style="color: black; text-decoration: none;">
+              <div class="media-content">
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png" alt="Video Thumbnail">           
+             <p>The alphabet is so much fun</p></div>
+            </a>
+  
+            <a href="https://youtu.be/ZUQHSG22gRc?si=kviJGqLrSs2tAFxt" class="card__link tube" style="color: black; text-decoration: none;">
+              <div class="media-content"> 
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png" alt="Video Thumbnail">            
+            <p>Дауысты дауыссыз дыбыстар туралы ертегі</p></div>
+          </a>
+        </div>
+      </div>
+      
+
+      <div class="media-item">
+        <h3>Аудио</h3>
+        <div class="audio-content">
+          <a href="https://youtu.be/ZaqDNI96lWo?si=odFI7ei3dtPpIK_1" class="card__link tube" style="color: black; text-decoration: none;">
+          <div class="media-content">
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png"  alt="Audio Thumbnail">
+            <p>Тыңдалым. Қарттың ұлына өсиеті</p>
+          </a>
+          </div>
+          <a href="https://youtu.be/v4qGdaQx_Ts?si=8N3sH3a05QQ_wtzr" class="card__link tube" style="color: black; text-decoration: none;">
+            <div class="media-content">
+              <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png"  alt="Audio Thumbnail">
+              <p>Ақ тышқан мен нәресте</p>
+            </div></a>
+          <a href="https://youtu.be/H8mRwu1gdbE?si=e6cnCJ8Lw1ktZWuK" class="card__link tube" style="color: black; text-decoration: none;">
+            <div class="media-content">
+              <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\media-list\zz.png" alt="Audio Thumbnail">
+              <p>Listening a1</p>
+            </div></a>
+        </div>
+      </div>
+      
+
+      <footer class="footer-menu">
+        <div class="footer-section">
+            <p><a href="../project.html">О проекте</a></p>
+            <p><a href="../Inform.html">О нас</a></p>
+            <p><a href="../login/error.html">Обратная связь</a></p>
+        </div>
+        <div class="footer-section logo">
+          <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+        </div>
+        <div class="footer-section">
+          <p>Другие сайты</p>
+          <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+          <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+        </div>
+      </footer>
+      
+</body>
+</html>

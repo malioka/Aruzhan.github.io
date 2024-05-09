@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 2: Грамматика русского языка</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <script src="book.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+        </li>
+            <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+            <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+              <li id="lessons">
+                <a href="../lessons.html">Уроки</a>
+                <ul id="lessons-submenu">
+                  <li><a href="book-list.html">Книги</a></li>
+                  <li><a href="media-list.html">Медия</a></li>
+                </ul>
+              </li>
+              <li id="language-test">
+                <a href="../language-test.html">Языковой тест</a>
+                <ul id="language-test-submenu">
+                  <li><a href="../language-test/russian_test.html">Русский</a></li>
+                  <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+                  <li><a href="../language-test/english_test.html">Английский</a></li>
+                </ul>
+              </li>    
+              <li id="login">
+                <a href="#" onclick="openLoginModal()">Вход</a>
+            </li>  
+          </ul>
+        </nav>
+        <!-- Входное модальное окно -->
+        <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="login-form">
+                <h2>Войти</h2>
+                <form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <button type="submit">Войти</button>
+                    <span class="close" onclick="closeLoginModal()">&times;</span>
+                </form>
+                <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Форма регистрации (пока скрыта) -->
+        <div id="registration-form" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="registration-form">
+                <h2>Регистрация</h2>
+                <form action="registration.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                    <button type="submit">Зарегистрироваться</button>
+                    <span class="close" onclick="closeRegistrationModal()">&times;</span>
+        
+                </form>
+            </div>
+        </div>
+        </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="../index.html">Главная</a> &gt; <a href="../lessons.html">Уроки</a> &gt; Урок 2: Грамматика русского языка
+    </div>
+
+    <div class="grid-container">
+        <!-- Первый блок -->
+        <div class="grid-item header-content" style="text-align: left;">
+            <h1>Введение в грамматику русского языка</h1>
+            <p>Добро пожаловать на второй урок по изучению грамматики русского языка! В этом уроке мы рассмотрим основные грамматические конструкции и правила русского языка.</p>
+            <h2>Спряжение глаголов</h2>
+            <p>Спряжение глаголов - это процесс изменения формы глагола в зависимости от лица, числа, времени и наклонения. Это одно из важнейших аспектов грамматики русского языка.</p>
+        </div>
+
+        <!-- Второй блок -->
+        <div class="grid-item parts-of-speech-section" style="text-align: left;">
+            <h2>Части речи</h2>
+            <p>Русский язык состоит из различных частей речи, таких как существительные, прилагательные, глаголы, наречия и другие. Каждая из них выполняет свою уникальную функцию в предложении.</p>
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\lessons\ru2.jpg" alt="Части речи" style="width: 75%;">
+        </div>
+        
+        <!-- Третий блок -->
+        <div class="grid-item sentence-structure-section" style="text-align: left;">
+            <h2>Структура предложения</h2>
+            <p>Понимание структуры предложения является важной частью изучения русского языка. Мы рассмотрим основные элементы предложения и их взаимосвязь.</p>
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\lessons\ruuuuuuuu.jpg" alt="Структура предложения" style="width: 80%;">
+        </div>
+
+        <!-- Четвертый блок -->
+        <div class="grid-item task-section" style="text-align: left;">
+            <h2>Задание: Грамматика русского языка</h2>
+            <ol>
+                <li>Поставьте слово в пропущенное место:</li>
+                <li>Вечером мы обычно смотрим <input type="text">.</li>
+                <li>Мой друг всегда говорит о своей <input type="text"> в школе.</li>
+                <li>Вчера вечером я посмотрел интересный <input type="text">.</li>
+                <li>Мы часто играем в футбол на <input type="text"> вечерами.</li>
+                <li>Каждое утро я пью чашку горячего <input type="text"> перед работой.</li>
+                <li>Она обычно ходит в <input type="text"> после работы.</li>
+                <li>В выходные мы часто гуляем в <input type="text"> парке.</li>
+                <li>Вчера я купил новую книгу в <input type="text">.</li>
+                <li>В субботу мы собираемся посетить <input type="text"> выставку.</li>
+                <li>Мы планируем поехать в <input type="text"> на следующей неделе.</li>
+                <li>Каждое утро я занимаюсь на <input type="text"> перед завтраком.</li>
+                <li>Он работает в большой <input type="text"> в центре города.</li>
+                <li>На обед я всегда заказываю салат из свежих <input type="text"> и овощей.</li>
+                <li>Вечером я люблю слушать музыку на своем <input type="text">.</li>
+                <li>Мы часто проводим время на <input type="text"> с друзьями.</li>
+                <li>В последний раз я был в <input type="text"> две недели назад.</li>
+                <li>Моя сестра читает книгу в своей <input type="text"> каждый вечер.</li>
+                <li>Каждый день я прохожу мимо этого магазина на <input type="text"> домой.</li>
+                <li>Мы обычно покупаем продукты в местном <input type="text">.</li>
+            </ol>
+        </div>        
+    </div>
+
+    <footer class="footer-menu">
+        <div class="footer-section">
+            <p><a href="../project.html">О проекте</a></p>
+            <p><a href="../Inform.html">О нас</a></p>
+            <p><a href="../login/error.html">Обратная связь</a></p>
+        </div>
+        <div class="footer-section logo">
+            <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+        </div>
+        <div class="footer-section">
+            <p>Другие сайты</p>
+            <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+            <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+          </div>
+    </footer>
+</body>
+</html>

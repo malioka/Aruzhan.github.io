@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 1: Алфавит и произношение</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <script src="book.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+        </li>
+            <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+            <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+              <li id="lessons">
+                <a href="../lessons.html">Уроки</a>
+                <ul id="lessons-submenu">
+                  <li><a href="book-list.html">Книги</a></li>
+                  <li><a href="media-list.html">Медия</a></li>
+                </ul>
+              </li>
+              <li id="language-test">
+                <a href="../language-test.html">Языковой тест</a>
+                <ul id="language-test-submenu">
+                  <li><a href="../language-test/russian_test.html">Русский</a></li>
+                  <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+                  <li><a href="../language-test/english_test.html">Английский</a></li>
+                </ul>
+              </li>    
+              <li id="login">
+                <a href="#" onclick="openLoginModal()">Вход</a>
+            </li>  
+          </ul>
+        </nav>
+        <!-- Входное модальное окно -->
+        <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="login-form">
+                <h2>Войти</h2>
+                <form action="login.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <button type="submit">Войти</button>
+                    <span class="close" onclick="closeLoginModal()">&times;</span>
+                </form>
+                <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Форма регистрации (пока скрыта) -->
+        <div id="registration-form" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="registration-form">
+                <h2>Регистрация</h2>
+                <form action="registration.php" method="post">
+                    <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="password" name="password" placeholder="Пароль" required><br>
+                    <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                    <button type="submit">Зарегистрироваться</button>
+                    <span class="close" onclick="closeRegistrationModal()">&times;</span>
+        
+                </form>
+            </div>
+        </div>
+        </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <a href="../index.html">Главная</a> &gt; <a href="../lessons.html">Уроки</a> &gt; Урок 1: Алфавит и произношение
+    </div>
+
+    <div class="grid-container">
+        <!-- Первый блок -->
+        <div class="grid-item header-content" style="text-align: left;">
+            <h1>Введение в русский алфавит и произношение</h1>
+            <p>Добро пожаловать на первый урок по изучению русского языка! В этом уроке мы рассмотрим основы русского алфавита и правила его произношения.</p>
+        </div>
+
+        <!-- Второй блок -->
+        <div class="grid-item alphabet-section" style="text-align: left;">
+            <h2>Русский алфавит</h2>
+            <p>Русский алфавит состоит из 33 букв. Он включает в себя 10 гласных и 21 согласную букву, а также две беззвучные буквы: Ь (мягкий знак) и Ъ (твёрдый знак).</p>
+            <p>Ниже представлены все буквы русского алфавита:</p>
+            <ul>
+                <li>А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Ъ, Ы, Ь, Э, Ю, Я</li>
+            </ul>
+            <p>Мы также рассмотрим произношение каждой буквы и особенности их звучания.</p>
+        </div>
+        
+        <!-- Третий блок -->
+        <div class="grid-item pronunciation-section" style="text-align: left;">
+            <h2>Произношение букв</h2>
+            <p>В русском языке есть звуки, которые могут быть сложными для некоторых студентов. Мы изучим правила произношения и дадим примеры для лучшего понимания звуков.</p>
+            <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\lessons\ru.jpg" alt="Произношение букв" style="width: 100%;">
+        </div>
+
+        <!-- Четвертый блок -->
+        <div class="grid-item task-section" style="text-align: left;">
+            <h2>Задание: Произношение</h2>
+            <ol>
+                <li>Произнесите и запишите звук "Ж".</li>
+                <li>Назовите и опишите произношение гласной буквы "О".</li>
+                <li>Как произносится согласная буква "Г"? Дайте примеры слов с этим звуком.</li>
+                <li>Согласно алфавиту, какой букве соответствует звук "Ш"?</li>
+            </ol>
+            <ol>
+                <li>Попробуйте составить короткое предложение, используя как можно больше букв алфавита казахского языка.</li>
+                <li>Создайте небольшой рассказ о своем любимом казахском слове.</li>
+                <li>Запишите короткое аудио, произнося слова из задания №3.</li>
+            </ol>
+            <ol>
+                <li>Напишите транскрипцию слов: "дом", "книга", "мама".</li>
+                <li>Произнесите звуки букв алфавита казахского языка.</li>
+                <li>Составьте слова из представленных букв: а, қ, с, д, т, р, е, м.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer class="footer-menu">
+        <div class="footer-section">
+            <p><a href="../project.html">О проекте</a></p>
+            <p><a href="../Inform.html">О нас</a></p>
+            <p><a href="../login/error.html">Обратная связь</a></p>
+        </div>
+        <div class="footer-section logo">
+            <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+        </div>
+        <div class="footer-section">
+            <p>Другие сайты</p>
+            <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+            <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+          </div>
+    </footer>
+</body>
+</html>

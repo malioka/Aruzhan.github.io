@@ -1,0 +1,64 @@
+/* Стили для оверлея модального окна */
+.videotube-modal-overlay {
+    color: #fff; /* Цвет текста */
+    display: none; /* Не показывать изначально */
+    z-index: 995; /* Позиционирование по оси Z */
+    opacity: 0; /* Прозрачность */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed; /* Фиксированное позиционирование */
+    background: #000; /* Цвет фона */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Контейнер модального окна */
+#videotube-modal-container {
+    z-index: 998; /* Позиционирование по оси Z */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Отображение в виде блока */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+/* Стили для модального окна */
+#videotube-modal {
+    text-align: center; /* Выравнивание текста по центру */
+    box-shadow: 0 0 40px #333; /* Тень */
+}
+
+/* Стили для отображения загрузки */
+#videotube-modal-loading {
+    position: fixed; /* Фиксированное позиционирование */
+    z-index: 997; /* Позиционирование по оси Z */
+    font-size: 1.5em; /* Размер шрифта */
+    top: 49%;
+    width: 5%;
+    text-align: center; /* Выравнивание текста по центру */
+    left: 45%;
+}
+
+/* Стили для кнопки закрытия модального окна */
+#videotube-modal-close {
+    position: fixed; /* Фиксированное позиционирование */
+    right: 15px;
+    top: 15px;
+    padding: 3px 13px; /* Отступы */
+    z-index: 999; /* Позиционирование по оси Z */
+    font-size: 25px; /* Размер шрифта */
+    text-shadow: 0 0 10px #fff; /* Тень текста */
+    border-radius: 3px; /* Радиус скругления углов */
+    cursor: pointer; /* Курсор при наведении */
+    transition-duration: .1s; /* Длительность анимации */
+}
+
+/* Стили для кнопки закрытия при наведении */
+#videotube-modal-close:hover {
+    background: #333; /* Цвет фона при наведении */
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список книг</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <script src="book.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+    </li>
+        <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+        <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+          <li id="lessons">
+            <a href="../lessons.html">Уроки</a>
+            <ul id="lessons-submenu">
+              <li><a href="book-list.html">Книги</a></li>
+              <li><a href="media-list.html">Медия</a></li>
+            </ul>
+          </li>
+          <li id="language-test">
+            <a href="../language-test.html">Языковой тест</a>
+            <ul id="language-test-submenu">
+              <li><a href="../language-test/russian_test.html">Русский</a></li>
+              <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+              <li><a href="../language-test/english_test.html">Английский</a></li>
+            </ul>
+          </li>    
+          <li id="login">
+            <a href="#" onclick="openLoginModal()">Вход</a>
+        </li>  
+      </ul>
+  </nav>
+  <!-- Входное модальное окно -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="login-form">
+            <h2>Войти</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <button type="submit">Войти</button>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </form>
+            <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Форма регистрации (пока скрыта) -->
+  <div id="registration-form" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="registration-form">
+            <h2>Регистрация</h2>
+            <form action="registration.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                <button type="submit">Зарегистрироваться</button>
+                <span class="close" onclick="closeRegistrationModal()">&times;</span>
+  
+            </form>
+        </div>
+    </div>
+  </div>
+<!-- Выпадающий список для категории Словари -->
+<div class="dropdown" onclick="toggleDropdown(this)">
+  <button class="dropbtn">Словари</button>
+  <div class="dropdown-content">
+    <a href="#C1">Русско-казахский разговорник</a>
+    <a href="#C2">Русско-английский словарь</a>
+    <a href="#C3">Англо-русский и русско-английский словарь</a>
+    <a href="#C4">Қазақша-орысша-ағылшынша сөздік</a>
+    <a href="#C5">Словарь русского языка</a>
+  </div>
+</div>
+
+<!-- Выпадающий список для категории Литература -->
+<div class="dropdown" onclick="toggleDropdown(this)">
+  <button class="dropbtn">Литература</button>
+  <div class="dropdown-content">
+    <a href="#L1">Сказки на русском</a>
+    <a href="#L2">Қазақша ертегілер</a>
+    <a href="#L3">Brothers-Grim-Fairy-Tales</a>
+    <a href="#L4">Казахские мифы</a>
+    <a href="#L5">English Fairy Tales</a>
+  </div>
+</div>
+
+<!-- Выпадающий список для категории Учебники -->
+<div class="dropdown" onclick="toggleDropdown(this)">
+  <button class="dropbtn">Учебники</button>
+  <div class="dropdown-content">
+    <a href="#Y1">Англиский граматика</a>
+    <a href="#Y2">Казахский язык. Базовый тренинг</a>
+    <a href="#Y3">Русский язык как иностранный</a>
+    <a href="#Y4">Англиский учебник</a>
+    <a href="#Y5">Казахский язык</a>
+  </div>
+</div>
+
+<!-- Блок с книгами -->
+
+<!-- Словарь -->
+<div id="books" class="books-container">
+  <h2>Словарь</h2>
+  <div class="book-list">
+    <div id="C1" class="book-item">
+      <a href="#" onclick="openModal('https://tilqural.kz/assets/books/7255e9657482cc6a78f079c3c35e0639.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Русско-казахский разговорник</h3>
+      </a>
+    </div>
+    <div id="C2" class="book-item">
+      <a href="#" onclick="openModal('http://elib.rshu.ru/files_books/pdf/rid_7409ff4c237540a59d9f858cd3830e1d.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Русско-англисский словарь</h3>
+      </a>
+    </div>
+    <div id="C3" class="book-item">
+      <a href="#" onclick="openModal('http://www.olehnik.ru/files/books/slovari/Англо-русский%20и%20русско-английский%20словарь%20для%20школьников.%20Более%2015000%20слов%20(%20PDFDrive%20).pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Англо-русский и русско-английский словарь</h3>
+      </a>
+    </div>
+    <div id="C4" class="book-item">
+      <a href="#" onclick="openModal('https://tilqural.kz/assets/books/79e7c193b93f0ea266db14d5bd63b6d3.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Қазақша-орысша-ағылшынша сөздік</h3>
+      </a>
+    </div>
+    <div id="C5" class="book-item">
+      <a href="#" onclick="openModal('http://www.olehnik.ru/files/books/slovari/Самый%20новейший%20толковый%20словарь%20русского%20языка%20XXI%20века.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Словарь русского языка</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Литература -->
+<div  id="literature" class="books-container">
+  <h2>Литература</h2>
+  <div class="book-list">
+    <div id="L1" class="book-item">
+      <a href="#" onclick="openModal('https://город-надежды.рф/wp-content/uploads/2018/07/sbornik-skazok.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Сказки на русском</h3>
+      </a>
+    </div>
+    <div id="L2" class="book-item">
+      <a href="#" onclick="openModal('https://www.almatykitap.kz/upload/files/71249_567436_09.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Қазақша ертегілер</h3>
+      </a>
+    </div>
+    <div id="L3" class="book-item">
+      <a href="#" onclick="openModal('https://freekidsbooks.org/wp-content/uploads/2017/01/Brothers-Grim-Fairy-Tales.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Brothers-Grim-Fairy-Tales</h3>
+      </a>
+    </div>
+    <div id="L4" class="book-item">
+      <a href="#" onclick="openModal('https://csmb.kz/images/csmbkz/ocyfrovannye/ponomarenko_e_kazakskie_mify_detyam.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>Казахские мифы</h3>
+      </a>
+    </div>
+    <div id="L5" class="book-item">
+      <a href="#" onclick="openModal('https://andonovicmilica.wordpress.com/wp-content/uploads/2018/10/english-fairy-tales.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 2">
+        <h3>English Fairy Tales</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Учебники -->
+<div id="textbooks" class="books-container">
+  <h2>Учебники</h2>
+  <div class="book-list">
+    <div id="Y1" class="book-item">
+      <a href="#" onclick="openModal('https://www.real-atc.h1n.ru/ENG/Files/vgramm.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 4">
+        <h3>Англиский граматика</h3>
+      </a>
+    </div>
+    <div id="Y2" class="book-item">
+      <a href="#" onclick="openModal('https://tilqural.kz/assets/books/b14c5e2df891667391269fa9abca0383.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 1">
+        <h3>Казахский язык. Базовый тренинг</h3>
+      </a>
+    </div>
+    <div id="Y3" class="book-item">
+      <a href="#" onclick="openModal('http://repo.ssau.ru/bitstream/Uchebnye-izdaniya/Russkii-yazyk-kak-inostrannyi-Elementarnyi-uroven-ucheb-posobie-Tekst-elektronnyi-83917/1/Мартынова%20О.Н.%20Русский%20язык%20как%20иностранный%202020.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 1">
+        <h3>Русский язык как иностранный</h3>
+      </a>
+    </div>
+    <div id="Y4" class="book-item">
+      <a href="#" onclick="openModal('https://bmu.vrn.muzkult.ru/media/2019/04/24/1259077996/angljskij_uchebnik.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 4">
+        <h3>Англиский учебник</h3>
+      </a>
+    </div>
+    <div id="Y5" class="book-item">
+      <a href="#" onclick="openModal('https://library.tou.edu.kz/fulltext/buuk/b1127.pdf')" style="color: black; text-decoration: none;">
+        <img src="C:\Users\Mechta2023\Desktop\4 семестр\протоколы и интерфейсы компьютерных систем\3modul\img\book-list\pp.png" alt="Книга 1">
+        <h3>Казахский язык</h3>
+      </a>
+    </div>
+  </div> 
+</div>
+
+<div id="pdfModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+  </div>
+</div>
+<!-- Футер -->
+<footer class="footer-menu">
+  <div class="footer-section">
+      <p><a href="../project.html">О проекте</a></p>
+      <p><a href="../Inform.html">О нас</a></p>
+      <p><a href="../login/error.html">Обратная связь</a></p>
+  </div>
+  <div class="footer-section logo">
+    <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+  </div>
+  <div class="footer-section">
+    <p>Другие сайты</p>
+    <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+    <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+  </div>
+</footer>
+
+</body>
+</html>

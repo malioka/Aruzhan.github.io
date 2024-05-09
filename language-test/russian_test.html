@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест по русскому языку</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <script src="test.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+    </li>
+        <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+        <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+        <li id="lessons">
+            <a href="../lessons.html" style="text-decoration:none;">Уроки</a>
+            <ul id="lessons-submenu">
+                <li><a href="../lessons/book-list.html">Книги</a></li>
+                <li><a href="../lessons/media-list.html">Медия</a></li>
+            </ul>
+        </li>
+      <li id="language-test">
+        <a href="../language-test.html">Языковой тест</a>
+        <ul id="language-test-submenu">
+          <li><a href="russian_test.html">Русский</a></li>
+          <li><a href="kazakh_test.html">Казахский</a></li>
+          <li><a href="english_test.html">Английский</a></li>
+        </ul>
+      </li>      
+      <li id="login">
+        <a href="#" onclick="openLoginModal()">Вход</a>
+    </li>  
+  </ul>
+</nav>
+<!-- Входное модальное окно -->
+<div id="login-modal" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="login-form">
+        <h2>Войти</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Имя пользователя" required><br>
+            <input type="password" name="password" placeholder="Пароль" required><br>
+            <button type="submit">Войти</button>
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+        </form>
+        <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+    </div>
+</div>
+</div>
+
+<!-- Форма регистрации (пока скрыта) -->
+<div id="registration-form" class="modal" style="display:none;">
+<div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="registration.php" method="post">
+            <input type="text" name="username" placeholder="Имя пользователя" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Пароль" required><br>
+            <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+            <button type="submit">Зарегистрироваться</button>
+            <span class="close" onclick="closeRegistrationModal()">&times;</span>
+
+        </form>
+    </div>
+</div>
+</div>
+  <div class="container">
+    <h1>Тест по русскому языку</h1>
+    <form id="quiz-form">
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 1: Что такое глагол?</p>
+          <label><input type="radio" name="q1" value="a"> Алфавит</label><br>
+          <label><input type="radio" name="q1" value="b"> Часть речи</label><br>
+          <label><input type="radio" name="q1" value="c"> Время года</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 2: Какой знак препинания ставится после прямой речи?</p>
+          <label><input type="radio" name="q2" value="a"> Точка</label><br>
+          <label><input type="radio" name="q2" value="b"> Запятая</label><br>
+          <label><input type="radio" name="q2" value="c"> Тире</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 3: У меня есть брат, ... я очень люблю.</p>
+          <label><input type="radio" name="q3" value="a"> которому</label><br>
+          <label><input type="radio" name="q3" value="b"> который</label><br>
+          <label><input type="radio" name="q3" value="c"> которого</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 4: Папа приехал из Англии и ... подарки детям.</p>
+          <label><input type="radio" name="q4" value="a"> привел</label><br>
+          <label><input type="radio" name="q4" value="b"> привез</label><br>
+          <label><input type="radio" name="q4" value="c"> принес</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 5: Весной студентам трудно сосредоточиться ...</p>
+          <label><input type="radio" name="q5" value="a"> на учебе</label><br>
+          <label><input type="radio" name="q5" value="b"> за учебу</label><br>
+          <label><input type="radio" name="q5" value="c"> с учебой</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 6: Как называется слово, которое обозначает действие?</p>
+          <label><input type="radio" name="q6" value="a"> Прилагательное</label><br>
+          <label><input type="radio" name="q6" value="b"> Существительное</label><br>
+          <label><input type="radio" name="q6" value="c"> Глагол</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 7: Я люблю ... музыку.</p>
+          <label><input type="radio" name="q7" value="a"> слушать</label><br>
+          <label><input type="radio" name="q7" value="b"> слышать</label><br>
+          <label><input type="radio" name="q7" value="c"> слушаю</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 8: Какой знак препинания ставится в конце вопросительного предложения?</p>
+          <label><input type="radio" name="q8" value="a"> Точка</label><br>
+          <label><input type="radio" name="q8" value="b"> Запятая</label><br>
+          <label><input type="radio" name="q8" value="c"> Вопросительный знак</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 9: Студенты мечтают ...</p>
+          <label><input type="radio" name="q9" value="a"> о каникулы</label><br>
+          <label><input type="radio" name="q9" value="b"> в каникулы</label><br>
+          <label><input type="radio" name="q9" value="c"> о каникулах</label><br>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question">
+          <p>Вопрос 10: Когда мы ... домой, начался дождь.</p>
+          <label><input type="radio" name="q10" value="a"> пойдем</label><br>
+          <label><input type="radio" name="q10" value="b"> ходили</label><br>
+          <label><input type="radio" name="q10" value="c"> шли</label><br>
+        </div>
+      </div>
+      <button type="submit">Завершить тест</button>
+    </form>
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+  <!-- Содержимое модального окна -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="result">
+      <h2>Результаты теста</h2>
+      <p id="score"></p>
+      <ul id="correct-answers"></ul>
+      <ul id="incorrect-answers"></ul>
+      <div id="level"></div>
+    </div>
+  </div>
+  </div>
+</div>
+  <script>
+    function openModal() {
+// Находим модальное окно
+var modal = document.getElementById("myModal");
+// Показываем модальное окно
+modal.style.display = "block";
+
+// Находим элемент закрытия модального окна
+var span = document.getElementsByClassName("close")[0];
+
+// Закрываем модальное окно, если пользователь нажимает на крестик или вне его
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+}
+document.getElementById('quiz-form').addEventListener('submit', function(event) {
+event.preventDefault();
+const formData = new FormData(this);
+let answeredQuestions = 0; // Количество вопросов, на которые пользователь ответил
+
+// Подсчет количества отвеченных вопросов
+formData.forEach((value, key) => {
+  if (value !== '') {
+      answeredQuestions++;
+  }
+});
+
+// Если пользователь не ответил на все вопросы, выводим сообщение и прерываем выполнение
+if (answeredQuestions < 10) {
+  alert('Please answer all questions to complete the test.\nПожалуйста, ответьте на все вопросы, чтобы завершить тест.\nТестті аяқтау үшін барлық сұрақтарға жауап беріңіз.');
+  return; // Прерываем выполнение функции
+}
+// Если пользователь ответил на все вопросы
+  let score = 0;
+  let correctAnswers = [];
+  let incorrectAnswers = [];
+
+  // Подсчет баллов и формирование списков правильных и неправильных ответов
+  formData.forEach((value, key) => {
+      if (key === 'q1' && value === 'b') {
+          score++;
+          correctAnswers.push('Вопрос 1');
+      } else if (key === 'q2' && value === 'a') {
+          score++;
+          correctAnswers.push('Вопрос 2');
+      } else if (key === 'q3' && value === 'c') {
+          score++;
+          correctAnswers.push('Вопрос 3');
+      } else if (key === 'q4' && value === 'b') {
+          score++;
+          correctAnswers.push('Вопрос 4');
+      } else if (key === 'q5' && value === 'a') {
+          score++;
+          correctAnswers.push('Вопрос 5');
+      } else if (key === 'q6' && value === 'c') {
+          score++;
+          correctAnswers.push('Вопрос 6');
+      } else if (key === 'q7' && value === 'a') {
+          score++;
+          correctAnswers.push('Вопрос 7');
+      } else if (key === 'q8' && value === 'b') {
+          score++;
+          correctAnswers.push('Вопрос 8');
+      } else if (key === 'q9' && value === 'c') {
+          score++;
+          correctAnswers.push('Вопрос 9');
+      } else if (key === 'q10' && value === 'c') {
+          score++;
+          correctAnswers.push('Вопрос 10');
+      } else {
+          incorrectAnswers.push(`Вопрос ${key.substring(1)}`);
+      }
+  });
+
+  // Вывод результатов теста и убирание маркеров для списка ответов
+  const result = document.getElementById('result');
+  result.style.display = 'block';
+
+  const scoreElement = document.getElementById('score');
+  scoreElement.textContent = `Вы набрали ${score} балла(ов) из 10`;
+
+  const correctAnswersList = document.getElementById('correct-answers');
+  correctAnswersList.innerHTML = 'Вопросы на которые ответили верно:';
+  correctAnswers.forEach(answer => {
+      const li = document.createElement('li');
+      li.textContent = answer;
+      correctAnswersList.appendChild(li);
+  });
+
+  const incorrectAnswersList = document.getElementById('incorrect-answers');
+  incorrectAnswersList.innerHTML = 'Вопросы на которые ответили не верно:';
+  incorrectAnswers.forEach(answer => {
+      const li = document.createElement('li');
+      li.textContent = answer;
+      incorrectAnswersList.appendChild(li);
+  });
+
+  let level;
+  if (score >= 0 && score <= 2) {
+      level = 'У вас начальный уровень знания языка(А1)';
+  } else if (score >= 3 && score <= 4) {
+      level = 'У вас элементарный уровень знания языка(А2)';
+  } else if (score >= 5 && score <= 6) {
+      level = 'У вас слабый средний уровень знания языка(В1)';
+  } else if (score >= 7 && score <= 8) {
+      level = 'У вас уровень знания языка выше среднего(В2)';
+  } else if (score >= 8 && score <= 9) {
+      level = 'У вас продвинутый уровень знания языка(С1)';
+  } else {
+      level = 'У вас совершенный уровень знания языка(С2)';
+  }
+
+  const levelElement = document.getElementById('level');
+  levelElement.textContent = level;
+
+  // Убираем маркеры для списка ответов
+  correctAnswersList.style.listStyleType = 'none';
+  incorrectAnswersList.style.listStyleType = 'none';
+
+  // Открываем модальное окно с результатами теста
+  openModal();
+} 
+
+);
+
+</script>
+  
+      <footer class="footer-menu">
+        <div class="footer-section">
+            <p><a href="../project.html">О проекте</a></p>
+            <p><a href="../Inform.html">О нас</a></p>
+            <p><a href="../login/error.html">Обратная связь</a></p>
+        </div>
+        <div class="footer-section logo">
+          <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+        </div>
+        <div class="footer-section">
+          <p>Другие сайты</p>
+          <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+          <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+        </div>
+      </footer>
+</body>
+</html>

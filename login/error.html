@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <!-- Подключаем начальные стили -->
+    <link id="theme-style" rel="stylesheet" href="../theme.css">
+  <script src="book.js"></script>
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleTheme()">
+    </li>
+        <li id="home"><a href="../index.html" style="text-decoration:none;">Главная</a></li>
+        <li id="dictionary"><a href="../dictionary.html" style="text-decoration:none;">Словарь</a></li>
+        <li id="lessons">
+            <a href="../lessons.html" style="text-decoration:none;">Уроки</a>
+            <ul id="lessons-submenu">
+                <li><a href="../lessons/book-list.html">Книги</a></li>
+                <li><a href="../lessons/media-list.html">Медия</a></li>
+            </ul>
+        </li>
+        <li id="language-test">
+            <a href="../language-test.html">Языковой тест</a>
+            <ul id="language-test-submenu">
+                <li><a href="../language-test/russian_test.html">Русский</a></li>
+                <li><a href="../language-test/kazakh_test.html">Казахский</a></li>
+                <li><a href="../language-test/english_test.html">Английский</a></li>
+            </ul>
+        </li>      
+          <li id="login">
+            <a href="#" onclick="openLoginModal()">Вход</a>
+        </li>  
+      </ul>
+  </nav>
+  <!-- Входное модальное окно -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="login-form">
+            <h2>Войти</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <button type="submit">Войти</button>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </form>
+            <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Форма регистрации (пока скрыта) -->
+  <div id="registration-form" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="registration-form">
+            <h2>Регистрация</h2>
+            <form action="registration.php" method="post">
+                <input type="text" name="username" placeholder="Имя пользователя" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Пароль" required><br>
+                <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+                <button type="submit">Зарегистрироваться</button>
+                <span class="close" onclick="closeRegistrationModal()">&times;</span>
+  
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="conta">
+    <div class="feedback-block">
+      <h2>Форма обратной связи</h2>
+      <form id="feedbackForm">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Ваш Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Ваше сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <label for="topic">Тема обращения:</label><br>
+        <select id="topic" name="topic">
+          <option value="question">Вопрос</option>
+          <option value="feedback">Обратная связь</option>
+          <option value="support">Техническая поддержка</option>
+        </select><br>
+        <button type="button" onclick="submitFeedback()">Отправить сообщение</button>
+      </form>
+    </div>
+    <div class="error-block">
+      <h2>Обращение при нахождении ошибки</h2>
+      <form id="errorForm">
+        <label for="errorType">Тип ошибки:</label><br>
+        <select id="errorType" name="errorType">
+          <option value="page">Ошибка на странице</option>
+          <option value="form">Ошибка в форме</option>
+          <option value="other">Другая ошибка</option>
+        </select><br>
+        <label for="errorDescription">Описание ошибки:</label><br>
+        <textarea id="errorDescription" name="errorDescription" required></textarea><br>
+        <label for="yourName">Ваше имя:</label><br>
+        <input type="text" id="yourName" name="yourName" required><br>
+        <label for="yourStatus">Ваш статус:</label><br>
+        <select id="yourStatus" name="yourStatus">
+          <option value="teacher">Учитель</option>
+          <option value="student">Ученик</option>
+          <option value="parent">Родитель</option>
+          <option value="other">Другое</option>
+        </select><br>
+        <label for="yourEmail">Ваш Email:</label><br>
+        <input type="email" id="yourEmail" name="yourEmail" required><br>
+        <button type="button" onclick="submitError()">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function submitFeedback() {
+      // Ваша логика для отправки формы обратной связи
+      alert("Форма обратной связи отправлена!");
+    }
+
+    function submitError() {
+      // Ваша логика для отправки формы ошибки
+      alert("Форма ошибки отправлена!");
+    }
+  </script>
+
+
+  <footer class="footer-menu">
+    <div class="footer-section">
+      <p><a href="../project.html">О проекте</a></p>
+      <p><a href="../Inform.html">О нас</a></p>
+      <p><a href="error.html">Обратная связь</a></p>
+    </div>
+    <div class="footer-section logo">
+      <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+    </div>
+    <div class="footer-section">
+      <p>Другие сайты</p>
+      <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+      <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+    </div>
+  </footer>
+</body>
+</html>

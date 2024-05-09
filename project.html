@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <!-- Подключаем общие стили -->
+  <link rel="stylesheet" href="styles.css?v=1">
+  <!-- Подключаем начальные стили -->
+  <link id="theme-style" rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <nav id="main-nav">
+    <ul id="navbar">
+      <li id="logotip">
+        <img id="theme-switch-btn" src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" style="width: 100px;" onclick="toggleCSS()"></li>
+        <li id="home"><a href="index.html" style="text-decoration:none;">Главная</a></li>
+        <li id="dictionary"><a href="dictionary.html" style="text-decoration:none;">Словарь</a></li>
+        <li id="lessons">
+            <a href="lessons.html" style="text-decoration:none;">Уроки</a>
+            <ul id="lessons-submenu">
+                <li><a href="lessons/book-list.html">Книги</a></li>
+                <li><a href="lessons/media-list.html">Медия</a></li>
+            </ul>
+        </li>
+        <li id="language-test">
+            <a href="language-test.html">Языковой тест</a>
+            <ul id="language-test-submenu">
+                <li><a href="language-test/russian_test.html">Русский</a></li>
+                <li><a href="language-test/kazakh_test.html">Казахский</a></li>
+                <li><a href="language-test/english_test.html">Английский</a></li>
+            </ul>
+        </li>      
+        <li id="login">
+          <a href="#" onclick="openLoginModal()">Вход</a>
+      </li>  
+    </ul>
+</nav>
+<!-- Входное модальное окно -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="login-form">
+          <h2>Войти</h2>
+          <form action="login.php" method="post">
+              <input type="text" name="username" placeholder="Имя пользователя" required><br>
+              <input type="password" name="password" placeholder="Пароль" required><br>
+              <button type="submit">Войти</button>
+              <span class="close" onclick="closeLoginModal()">&times;</span>
+          </form>
+          <a href="#" id="register-link" onclick="showRegistrationForm()">Зарегистрироваться</a>
+      </div>
+  </div>
+</div>
+
+<!-- Форма регистрации (пока скрыта) -->
+<div id="registration-form" class="modal" style="display:none;">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="registration-form">
+          <h2>Регистрация</h2>
+          <form action="registration.php" method="post">
+              <input type="text" name="username" placeholder="Имя пользователя" required><br>
+              <input type="email" name="email" placeholder="Email" required><br>
+              <input type="password" name="password" placeholder="Пароль" required><br>
+              <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required><br>
+              <button type="submit">Зарегистрироваться</button>
+              <span class="close" onclick="closeRegistrationModal()">&times;</span>
+
+          </form>
+      </div>
+  </div>
+</div>
+<div id="soile-project" class="soile-container">
+    <h2>О проекте</h2>
+    <p>Soile - это уникальная платформа, призванная сделать процесс изучения языков захватывающим и увлекательным. Название "Soile" происходит от слова "сөйле", что в переводе означает "говори". Именно говоря на изучаемом языке, мы наиболее эффективно улучшаем свои навыки. Наша платформа предоставляет возможность погрузиться в мир языка через изучение слов, грамматики, аудирование и чтение, помогая развить разговорные навыки.</p>
+    <p>Проект Soile основан на изучении трех основных языков, используемых в Казахстане: казахского, русского и английского. Этот проект создан с целью сделать обучение языкам доступным и увлекательным для всех желающих.</p>
+    <p>Обучение на платформе Soile поможет вам свободно владеть казахским, русским и английским языками, открывая для себя новые возможности в общении и культурном обмене.</p>
+    <p>Преимущества онлайн курса включают современный подход к обучению, свободное расписание, коммуникативную методику, интересный контент и гибкость в обучении.</p>
+    <p>Присоединяйтесь к Soile прямо сейчас и начните захватывающее путешествие в мир трех основных языков Казахстана!</p>
+  </div>
+ 
+  <footer class="footer-menu">
+    <div class="footer-section">
+      <p><a href="project.html">О проекте</a></p>
+      <p><a href="Inform.html">О нас</a></p>
+      <p><a href="login/error.html">Обратная связь</a></p>
+    </div>
+    <div class="footer-section logo">
+      <img src="C:\Users\Mechta2023\Downloads\Soile.png" alt="Фото" class="logo-img">
+    </div>
+    <div class="footer-section">
+      <p>Другие сайты</p>
+      <p><a href="https://ieltsnow.ru/test/test_ielts.html" target="_blank" rel="noopener noreferrer">IELTSnow! Онлайн тест</a></p>
+      <p><a href="https://testserver.pro/run/test/Test-na-uroven''-kazakhskogo-yazyka/" target="_blank" rel="noopener noreferrer">КазТест: Уровень казахского</a></p>      
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
